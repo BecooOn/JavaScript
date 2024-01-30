@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Team-Work</title>
+  </head>
+  <body>
+    <div class="container">
+      <p class="p1">
+        Some soltions for JS questions, you should open the console in order to
+        see the results
+      </p>
+      <p class="p2">
+        1.Q: Reversed word <br>
+        let sentence = prompt("Enter a sentence: "); <br>
+        let len = sentence.length;<br>
+        let i = 0; let str = ""; <br>
+        let reverse = ""; let result = "";<br>
+
+        for (i = len - 1; i >= 0; i--){ <br>
+            if (sentence[i] !== " ") <br>
+            { str += sentence[i]; }<br>
+            else { <br>
+            for (let j = str.length - 1; j >= 0; j--) <br>
+                { reverse += str[j]; }<br>
+            result = result + reverse + " "; <br>
+            str = ""; <br>
+            reverse = ""; <br>
+            } <br>
+        } <br>
+        for (let j = str.length - 1; j >= 0; j--) {<br>
+             reverse += str[j]; <br>
+            } <br>
+        result += reverse;<br>
+        console.log(result);<br>
+      </p>
+      <p class="p3">
+        2.Q: Fibonnacci Numbers <br>
+        function fibonacci(num) { <br>
+            let i = 0; <br>
+            let num1 = 0; <br>
+            let num2 = 1; <br>
+            let num3 = 0; <br>
+            for (i = 0; i <= num; i++) { <br>
+                while (i < 2) { <br>
+                    console.log(i); i++; <br>
+                } <br>
+                if (i === 2) { continue; } <br>
+                num1 = num2 + num3; <br>
+                num3 = num2; <br>
+                num2 = num1; <br>
+                console.log(num1); <br>
+            } <br>
+        } <br>
+        let count = Number(prompt("How many fibonnacci numbers do you want to see? "));<br>
+        fibonacci(count);<br>
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
