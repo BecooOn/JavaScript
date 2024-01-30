@@ -6,23 +6,29 @@ let guess = 0;
 
 for (let i = 1; i <= right; i++) {
   guess = Number(prompt("Enter your guess between 0-100: "));
-  if (guess < rnd && temp > 1) {
+  if (isNaN(guess) && temp > 1) {
     alert(
-      `Little higher! CAUTION: You have ${--temp} right for guessing. Try it again!`
+      ` Invalid input. You have ${--temp} right for guessing. Try it again!`
     );
-  } else if (rnd < guess && temp > 1) {
-    alert(
-      `Little lower! CAUTION: You have ${--temp} right for guessing. Try it again!`
-    );
-  } else if (guess === rnd) {
-    alert(
-      `Congratulation! You are right! Random number was ${rnd}. Your grade is: ${
-        100 - (right - (temp - 1)) * (100 / right)
-      }`
-    );
-    break;
   } else {
-    break;
+    if (guess < rnd && temp > 1) {
+      alert(
+        `Little higher! CAUTION: You have ${--temp} right for guessing. Try it again!`
+      );
+    } else if (rnd < guess && temp > 1) {
+      alert(
+        `Little lower! CAUTION: You have ${--temp} right for guessing. Try it again!`
+      );
+    } else if (guess === rnd) {
+      alert(
+        `Congratulation! You are right! Random number was ${rnd}. Your grade is: ${
+          100 - (right - (temp - 1)) * (100 / right)
+        }`
+      );
+      break;
+    } else {
+      break;
+    }
   }
 }
 if (guess !== rnd) {
