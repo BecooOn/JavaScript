@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Protest+Riot&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Anta", sans-serif;
+}
+main {
+  text-align: center;
+  height: 40vh;
+}
+.list > li {
+  display: none;
+}
