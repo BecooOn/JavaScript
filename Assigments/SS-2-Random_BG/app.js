@@ -27,6 +27,7 @@ clickBtn.addEventListener("click", () => {
   let sum = `${color},${color1},${color2}`;
   bgDiv.style.backgroundImage = `conic-gradient(${color},${color1},${color2})`;
   colorText.textContent = sum;
+  colorText.style.backgroundImage = `conic-gradient(${color},${color1},${color2})`;
   colorInput.style.backgroundImage = `conic-gradient(${color},${color1},${color2})`;
   colorInput.type = `background-image:conic-gradient(${color},${color1},${color2})`;
   colorInput.value = sum;
