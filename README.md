@@ -8,3 +8,8 @@
 ------------------------------------------------------------
 ### Code Challenge ###
 #1 https://becooon.github.io/JavaScript/Coding_Challenges/CC-01/
+
+
+------------------------------------------------------------
+### Assigments ###
+#1 https://becooon.github.io/JavaScript/Projects/01-Guess-the-Number-Game

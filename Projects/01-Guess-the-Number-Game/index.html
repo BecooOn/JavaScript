@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess-Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="start">
+        <button class="start-btn">Start to Guess</button>
+      </div>
+      <div class="container1">
+        <header class="header">
+          <h1 class="h1">This is a Guess-Game</h1>
+          <p class="remind">
+            <strong class="note">Note:</strong> You
+            must enter a number. It should be between <strong>1-100</strong>. If
+            you enter an invalid value, your number of guesses will decrease.
+          </p>
+          <p class="message"></p>
+        </header>
+        <main class="main">
+          <div class="computer">
+            <div id="storeNum">?</div>
+            <button class="btn color">Color</button>
+          </div>
+          <div class="guess">
+            <input type="number" id="guess" min="1" max="100" />
+            <button class="btn check">Check</button>
+          </div>
+          <div class="score">
+            <div id="right">Right:<p class="hak">10</p></div>
+            <div id="grade">Grade:<p class="point">0</p></div>
+          </div>
+        </main>
+      </div>
+      <footer class="footer">
+        <p>Designed by Adem</p>
+      </footer>
+    </div>
+    <audio src="./audio/Door_open_sound_effect.mp3" class="audio1"></audio>
+    <audio src="./audio/Oscar_goes_to.mp3" class="audio2"></audio>
+    <audio src="./audio/Sıkılıyorum _Daralıyorum_İsyan_Ediyorum.mp3" class="audio3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
