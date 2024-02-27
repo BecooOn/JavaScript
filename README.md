@@ -13,3 +13,10 @@
 ------------------------------------------------------------
 ### Assigments ###
 #1 https://becooon.github.io/JavaScript/Projects/01-Guess-the-Number-Game
+
+
+------------------------------------------------------------
+### Free-Studies ###
+#1 https://becooon.github.io/JavaScript/Free-Studies/CC-01
+#2 https://becooon.github.io/JavaScript/Free-Studies/CC-02
+
