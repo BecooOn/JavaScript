@@ -14,7 +14,7 @@ btn.addEventListener("click", () => {
       text.textContent = `There is ${count} vowel in `;
       span.textContent = `"${str}"`;
     } else {
-      text.textContent = `There is ${count} vowel in `;
+      text.textContent = `There are ${count} vowels in `;
       span.textContent = `"${str}"`;
     }
   } else {
