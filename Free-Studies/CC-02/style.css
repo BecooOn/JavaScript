@@ -1,0 +1,25 @@
+.container {
+  padding: 2rem;
+  background-color: bisque;
+}
+.p1 {
+  background-color: aqua;
+  width: 20vw;
+  padding: 1rem;
+}
+.p2 {
+  background-color: chocolate;
+  width: 20vw;
+  height: 10vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 1rem;
+}
+.p3 {
+  background-color: blueviolet;
+  width: 20vw;
+  height: 10vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 1rem;
+}

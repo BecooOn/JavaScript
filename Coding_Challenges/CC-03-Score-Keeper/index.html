@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="./images/CLARUSWAY_LOGO.png" alt="" />
+      </header>
+      <main class="main">
+        <div class="img">
+          <img src="./images/teble-tennis.gif" alt="" />
+        </div>
+        <p class="text">Scores</p>
+        <div class="score">
+          <p class="player1">0</p>
+          <p class="betweem">to</p>
+          <p class="player2">0</p>
+        </div>
+        <div class="label">
+          <label for="total">Score to Win:</label>
+          <input type="number" name="" id="total" min="1" max="10" placeholder="1"/>
+        </div>
+        <div class="buttons">
+          <button class="btn player1-Btn">+1 For Player1</button>
+          <button class="btn player2-Btn">+1 For Player2</button>
+          <button class="btn reset">RESET</button>
+        </div>
+      </main>
+      <footer class="footer">
+        <p>Done by Adem</p>
+      </footer>
+    </div>
+    <audio src="./audio/tennis.mp3" class="tennis"></audio>
+    <audio src="./audio/Winner.mp3" class="winner"></audio>
+    <script src="./script.js"></script>
+  </body>
+</html>
