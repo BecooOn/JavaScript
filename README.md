@@ -13,12 +13,13 @@
 
 
 ------------------------------------------------------------
-### Assigments ###
+### Projects ###
 #1 https://becooon.github.io/JavaScript/Projects/01-Guess-the-Number-Game
+#3 https://becooon.github.io/JavaScript/Projects/03-Checkout-Page
 
 
 ------------------------------------------------------------
 ### Free-Studies ###
 #1 https://becooon.github.io/JavaScript/Free-Studies/CC-01
-#2 https://becooon.github.io/JavaScript/Free-Studies/CC-02
+#2 https://becooon.github.io/JavaScript/Free-Studies/S01-to-do-List
 
