@@ -34,7 +34,7 @@ body {
 }
 .h1 {
   /* border: 2px solid rgb(90, 54, 7); */
-  margin: 1rem auto;
+  margin: 2rem auto;
   color: rgb(124, 78, 17);
   font-style: italic;
   max-width: 400px;
