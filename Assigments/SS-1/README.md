@@ -1,5 +1,8 @@
 ### JavaScript DOM Assignment 1
 
+Aşağıda verilmiş bir görev var ben bu görevi aşağıda belirtilen şekilde yaptım. JavaScript DOM ile ilk ödevimi yaptım.
+HTML5,CSS3 ve JavaScript kullandım.
+
 ### Amaç:
 
 - Bu görevin amacı, öğrendiklerinizi pekiştirmek. JS DOM kullanarak verilen html yapısını aşağıdaki adımlarla modifiye etmeniz beklenmektedir. HTML Çıktısının şuanki hali ve JS eklendikten sonraki örnek yapısı aşağıdaki resimlerde verilmiştir.
