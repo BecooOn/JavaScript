@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+.anta-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Anta", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  /* border: 2px solid red; */
+  background-image: url(./img/bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 500px;
+  margin: 5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+h1{
+    color: darkorange;
+}
+.validator {
+  & #number,
+  #name {
+    width: 200px;
+    height: 2.5rem;
+    padding-left: 8px;
+    border-radius: 5px;
+  }
+  & .btn {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    width: 75px;
+    height: 2.5rem;
+    font-weight: 700;
+    &:hover {
+      cursor: pointer;
+      background-color: red;
+      color: white;
+    }
+  }
+}
+
+.result {
+  margin-top: 1rem;
+  color: green;
+}
+.red {
+  margin-top: 1rem;
+  color: red;
+}
