@@ -87,6 +87,7 @@ btn.addEventListener("click", () => {
 document.addEventListener("keydown", function (e) {
   if (e.key === "Delete" || e.key === "Backspace") {
     document.querySelector("#number").click();
+    document.querySelector("#name").click();
   } else if (e.key === "Enter") {
     btn.click();
   }
