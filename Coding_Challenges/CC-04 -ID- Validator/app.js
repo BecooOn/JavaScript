@@ -2,7 +2,6 @@ const btn = document.querySelector(".btn");
 const number = document.querySelector("#number");
 const name = document.querySelector("#name");
 
-
 //?sonucu ekranda göstermek için
 const result = document.createElement("p");
 result.classList.add("result");
@@ -70,8 +69,9 @@ btn.addEventListener("click", () => {
   const personID = JSON.stringify(obj.id);
   localStorage.setItem("name", personName);
   localStorage.setItem("id", personID);
-//   localStorage.clear();
+  //   localStorage.clear();
 
+  name.value = "";
   number.value = "";
   number.focus();
   setTimeout(() => (result.textContent = ""), 3000);
