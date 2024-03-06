@@ -69,7 +69,7 @@ btn.addEventListener("click", () => {
   const personID = JSON.stringify(obj.id);
   localStorage.setItem("name", personName);
   localStorage.setItem("id", personID);
-  //   localStorage.clear();
+  // localStorage.clear();
 
   name.value = "";
   number.value = "";

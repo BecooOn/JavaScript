@@ -16,6 +16,7 @@
 ------------------------------------------------------------
 ### Projects ###
 #1 https://becooon.github.io/JavaScript/Projects/01-Guess-the-Number-Game
+#2 https://becooon.github.io/JavaScript/Projects/02-Wallet-App
 #3 https://becooon.github.io/JavaScript/Projects/03-Checkout-Page/checkout.html
 
 

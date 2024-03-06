@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallet-App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="h1">
+        <img src="./img/monogram-B.png" alt="" id="img-monogram" /> My Wallet
+        Application
+      </h1>
+
+      <div class="harcama-formu">
+        <div class="harcama-formu-baslik">
+          <h3 class="h3">Harcama Formu</h3>
+        </div>
+
+        <div class="tarih">
+          <label for="tarih">Tarih</label><br />
+          <input type="date" name="" id="tarih" />
+        </div>
+
+        <div class="harcanan-para">
+          <label for="harcama">Harcanan Para</label><br />
+          <input
+            type="number"
+            name=""
+            id="harcama"
+            placeholder="Harcanan para(₺)" autofocus min="0" required
+          />
+        </div>
+
+        <div class="harcama-aciklama">
+          <label for="harcama-aciklama">Harcama Açıklaması</label><br />
+          <input
+            type="text"
+            name=""
+            id="harcama-aciklama-input"
+            placeholder="Harcama Açıklaması" required
+          />
+        </div>
+
+        <div class="kaydet">
+          <button class="btn-kaydet">Kaydet</button>
+        </div>
+      </div>
+
+      <div class="gelir-formu">
+        <input type="number" name="" id="gelir" placeholder="Geliriniz(₺)" min="0" autofocus required/>
+        <button class="btn-ekle">Ekle</button>
+      </div>
+
+      <div class="tablo-formu">
+        <!-- <table class="table">
+          <thead class="table-thead">
+            <tr class="table-tr">
+              <th class="table-tarih">Tarih</th>
+              <th class="table-harcama-aciklama">Harcama Açıklaması</th>
+              <th class="table-harcanan-para">Harcanan Para</th>
+              <th class="table-islem">İşlem</th>
+            </tr>
+          </thead>
+          <tbody class="table-tbody"></tbody>
+        </table> -->
+      </div>
+
+      <div class="hasilat">
+        <table class="hasilat-table">
+          <tr class="hasilat-table-gelir">
+            <td>Geliriniz:</td>
+            <td class="sonuc-gelir"></td>
+          </tr>
+          <tr class="hasilat-table-gider">
+            <td>Gideriniz:</td>
+            <td class="sonuc-gider"></td>
+          </tr>
+          <tr class="hasilat-table-kalan">
+            <td>Kalan:</td>
+            <td class="sonuc-kalan"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="temizle">
+        <button type="reset" class="btn-temizle">Tümünü Temizle</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

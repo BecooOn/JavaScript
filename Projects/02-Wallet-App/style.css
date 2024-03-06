@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+.anta-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Anta", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  box-shadow: 0 0 10px black;
+  padding-top: 1rem;
+  background-color: aquamarine;
+  width: 50%;
+  /* height: 200%; */
+  margin: auto;
+}
+.h1 {
+  border: 3px solid orangered;
+  background-color: beige;
+  border-radius: 0.5rem;
+  margin: 0 1rem;
+  padding: 1rem;
+  color: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+#img-monogram {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: green;
+}
+.harcama-formu {
+  background-color: beige;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 3px solid orangered;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0.7rem;
+  color: orangered;
+}
+.h3 {
+  padding-top: 1rem;
+}
+.harcama-formu-baslik {
+  /* border: 2px solid red; */
+  grid-area: 1/1/2/3;
+  text-align: center;
+}
+.tarih,
+.harcanan-para {
+  /* border: 2px solid red; */
+  font-weight: bold;
+  line-height: 2rem;
+  text-align: center;
+}
+#tarih,
+#harcama {
+  width: 95%;
+  height: 2rem;
+  border-radius: 5px;
+  padding: 8px;
+}
+.harcama-aciklama {
+  /* border: 2px solid red; */
+  grid-area: 3/1/4/3;
+  font-weight: bold;
+  line-height: 2rem;
+  text-align: center;
+}
+#harcama-aciklama-input {
+  width: 98%;
+  height: 2rem;
+  border-radius: 5px;
+  padding: 8px;
+}
+.kaydet {
+  grid-area: 4/1/5/3;
+  text-align: center;
+}
+.btn-kaydet,
+.btn-ekle {
+  width: 100px;
+  height: 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  &:hover {
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+  }
+}
+.gelir-formu {
+  border: 3px solid orangered;
+  border-radius: 0.5rem;
+  background-color: beige;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+#gelir {
+  width: 83%;
+  height: 2rem;
+  border-radius: 5px;
+  padding: 8px;
+}
+.tablo-formu {
+  border: 3px solid orangered;
+  border-radius: 8px;
+  background-color: beige;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.table {
+  border-collapse: collapse;
+  text-align: center;
+}
+.table tr,
+.table td {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.table-thead th,
+.table-tbody tr,
+.table-tbody td {
+  background-color: #c2acacad;
+  border: 1px solid #000;
+  padding: 10px;
+  width: 20%;
+}
+.table tr:nth-child(even) {
+  background-color: #dad5d507;
+}
+.table tr:nth-child(odd) {
+  background-color: #cfc8c8b9;
+}
+.hasilat {
+  /* border: 2px solid black; */
+  margin: 1rem;
+  padding: 1rem;
+}
+.hasilat-table {
+  border-collapse: collapse;
+  display: flex;
+  justify-content: end;
+}
+
+.hasilat-table-gelir,
+.hasilat-table-gider,
+.hasilat-table td {
+  background-color: #b1acac88;
+  border: 1px solid #000;
+  padding: 10px;
+  width: 150px;
+}
+.hasilat-table tr:nth-child(even) {
+  background-color: #dad5d507;
+}
+.hasilat-table tr:nth-child(odd) {
+  background-color: #cfc8c8b9;
+}
+.hasilat-table td:nth-child(even) {
+  width: 200px;
+}
+.hasilat-table td:nth-child(odd) {
+  width: 50px;
+}
+.temizle {
+  /* border: 2px solid black; */
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+.btn-temizle {
+  width: 150px;
+  height: 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  &:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 70%;
+  }
+  .gelir-formu {
+    justify-content: center;
+  }
+  #gelir {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .container {
+    width: 100%;
+  }
+  .h1 {
+    font-size: 1.4rem;
+  }
+  .gelir-formu {
+    justify-content: center;
+  }
+  #gelir {
+    width: 98%;
+  }
+}
