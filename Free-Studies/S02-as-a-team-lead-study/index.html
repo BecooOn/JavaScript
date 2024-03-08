@@ -54,7 +54,13 @@
               </div>
             </div>
             <section id="home" class="section">
-              <button class="btn" id="videoBtn">INTRO</button>
+              <a href="#" class="animated-button1 fw-bold" id="videoBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                INTRO
+              </a>
             </section>
             <section id="question1" class="section" style="display: none">
               <div class="questions">
@@ -766,10 +772,22 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 text-center mt-4">
-            <button type="button" class="btn btn-dark" id="previous">
+            <button
+              type="button"
+              class="btn btn-dark"
+              id="previous"
+              style="visibility: hidden"
+            >
               Previous
             </button>
-            <button type="button" class="btn btn-dark" id="next">Next</button>
+            <button
+              type="button"
+              class="btn btn-dark"
+              id="next"
+              style="visibility: hidden"
+            >
+              Next
+            </button>
           </div>
         </div>
       </div>
@@ -777,7 +795,11 @@
       <!-- ----------------------------------------- -->
       <!--                  Buttons                  -->
       <!-- ----------------------------------------- -->
-      <div class="container-fluid buttons">
+      <div
+        class="container-fluid buttons"
+        id="btnArea"
+        style="visibility: hidden"
+      >
         <div class="row">
           <div class="col-12 text-center">
             <button
@@ -933,7 +955,7 @@
       <div class="container-fluid buttons">
         <div class="row">
           <div class="col-12 text-center">
-            <button id="btn">Rastgele</button>
+            <button id="btn" style="visibility: hidden">Rastgele</button>
           </div>
         </div>
       </div>
