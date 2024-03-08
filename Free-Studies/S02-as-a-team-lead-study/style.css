@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+.anta-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Anta", sans-serif;
+}
+body {
+  background-color: rgb(176, 181, 214);
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  background-color: rgb(176, 181, 214);
+  text-align: center;
+  align-items: center;
+  height: 100px;
+}
+.headerPart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* flex-wrap: wrap; */
+}
+.contributers {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+main {
+  /* border: 2px solid fuchsia; */
+  color: white;
+  height: 60vh;
+}
+#videoBtn {
+  width: 5.7rem;
+  height: 5.7rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: rgba(255, 228, 196, 0.9);
+}
+#home {
+  /* border: 2px solid fuchsia; */
+  width: 52%;
+  height: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background-image: url(./audio/bgGif.gif);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  -webkit-mask: linear-gradient(90deg, #0000, #000 10% 90%, #0000);
+}
+
+.section {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  background-color: lightgray;
+  /* border: 1px solid #000; */
+  text-align: center;
+  padding: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+.questions {
+  /* border: 2px solid fuchsia; */
+  /* grid-area: 1/1/2/3; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 87%;
+  padding-top: 1rem;
+}
+.options {
+  /* border: 2px solid salmon; */
+  text-align: left;
+  padding: 0.5rem;
+  line-height: 1.8rem;
+  font-size: 1.5rem;
+}
+.btn-div {
+  /* border: 2px solid blue; */
+  text-align: center;
+  margin-top: 2rem;
+}
+.solution {
+  /* border: 2px solid rgb(0, 255, 76); */
+  display: none;
+  height: 85px;
+  font-size: 1.6rem;
+  color: red;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+#isim {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: blue;
+}
+
+.modal,
+.modalVideo {
+  display: none;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 15;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  padding: 1rem;
+  /* margin: auto; */
+  overflow: hidden;
+  position: relative;
+}
+.modal-content-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  /* margin: auto; */
+  overflow: hidden;
+  /* position: relative; */
+}
+#introVideo {
+  width: 1200px;
+}
+@media screen and (max-width: 992px) {
+  .page {
+    width: 10px;
+    height: 30px;
+    font-size: 0.8rem;
+    padding-right: 13px;
+  }
+  #introVideo {
+    width: 750px;
+  }
+  main {
+    height: 55vh;
+  }
+  .section {
+    width: 100%;
+  }
+  #home {
+    width: 100%;
+  }
+  .modal-content-video video {
+    width: 500px;
+  }
+  .questions,
+  .options {
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+  }
+  .solution {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  #soru12img,
+  #soru17img {
+    width: 400px;
+    height: 100px;
+  }
+  #soru17imgA,
+  #soru17imgB,
+  #soru17imgC,
+  #soru17imgD {
+    /* display: inline-block; */
+    height: 120px;
+    width: 250px;
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page {
+    width: 10px;
+    height: 30px;
+    font-size: 0.8rem;
+    padding-right: 13px;
+  }
+  #introVideo {
+    width: 350px;
+  }
+  main {
+    height: 55vh;
+  }
+  .section {
+    width: 100%;
+  }
+  #home {
+    width: 100%;
+  }
+  .modal-content-video video {
+    width: 300px;
+  }
+  .questions,
+  .options {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+  .solution {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  #soru12img,
+  #soru17img {
+    width: 280px;
+  }
+  #soru17imgA,
+  #soru17imgB,
+  #soru17imgC,
+  #soru17imgD {
+    width: 110px;
+  }
+}

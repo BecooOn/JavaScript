@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TW-08</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 headerPart">
+            <img
+              src="https://ca.slack-edge.com/T06BXPTNG1H-U06CKL0J40J-c05b0cc96d25-512"
+              alt=""
+              class="contributers"
+            />
+            <img
+              src="https://ca.slack-edge.com/T06BXPTNG1H-U06CNF0339N-55e3d822a331-512"
+              alt=""
+              class="contributers"
+            />
+            <h1 class="text-center header-text">Team Work 08</h1>
+            <img
+              src="https://ca.slack-edge.com/T06BXPTNG1H-U06BZMJ6NRG-dccbd667afa4-512"
+              alt=""
+              class="contributers"
+            />
+            <img
+              src="https://ca.slack-edge.com/T06BXPTNG1H-U06C0S2BFGB-32c50024b778-512"
+              alt=""
+              class="contributers"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div class="col-12 h-100">
+            <div class="modalVideo">
+              <div class="modal-content-video">
+                <video src="./audio/intro.mp4" id="introVideo"></video>
+              </div>
+            </div>
+            <section id="home" class="section">
+              <button class="btn" id="videoBtn">INTRO</button>
+            </section>
+            <section id="question1" class="section" style="display: none">
+              <div class="questions">
+                <h2>
+                  1. What is the purpose of the async keyword in JavaScript?
+                </h2>
+                <div class="options">
+                  <label for="option1"
+                    ><input type="radio" name="options" id="option1" />A. To
+                    define an asynchronous function.</label
+                  >
+                  <br />
+                  <label for="option2"
+                    ><input type="radio" name="options" id="option2" />B. To
+                    specify a function that runs synchronously.</label
+                  >
+                  <br />
+                  <label for="option3"
+                    ><input type="radio" name="options" id="option3" />C. To
+                    create a generator function.</label
+                  >
+                  <br />
+                  <label for="option4"
+                    ><input type="radio" name="options" id="option4" />D. To
+                    indicate a callback function.</label
+                  >
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution1">Answer: A</div>
+            </section>
+            <section id="question2" class="section" style="display: none">
+              <div class="questions">
+                <h2>
+                  2. In an async function, what does the await keyword do?
+                </h2>
+                <div class="options">
+                  <label for="option2-1"
+                    ><input type="radio" name="options" id="option2-1" />A. To
+                    forcefully stop the function.</label
+                  >
+                  <br />
+                  <label for="option2-2"
+                    ><input type="radio" name="options" id="option2-2" />B. To
+                    pause the function execution until a promise is
+                    resolved.</label
+                  >
+                  <br />
+                  <label for="option2-3"
+                    ><input type="radio" name="options" id="option2-3" />C.
+                    Rejects a promise with an error.</label
+                  >
+                  <br />
+                  <label for="option2-4"
+                    ><input type="radio" name="options" id="option2-4" />D.
+                    Cancels the async function.</label
+                  >
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution2">
+                Answer: B Explanation: The await keyword is used to pause the
+                function's execution until the promise it awaits is resolved.
+              </div>
+            </section>
+            <section id="question3" class="section" style="display: none">
+              <div class="questions">
+                <h2>
+                  3. Which of the following is a valid use case for using
+                  async/await in JavaScript?
+                </h2>
+                <div class="options">
+                  <label for="option3-1"
+                    ><input type="radio" name="options" id="option3-1" />A.
+                    Iterating through an array of numbers.</label
+                  >
+                  <br />
+                  <label for="option3-2"
+                    ><input type="radio" name="options" id="option3-2" />B.
+                    Declaring constants.</label
+                  >
+                  <br />
+                  <label for="option3-3"
+                    ><input type="radio" name="options" id="option3-3" />C.
+                    Defining a switch statement.</label
+                  >
+                  <br />
+                  <label for="option3-4"
+                    ><input type="radio" name="options" id="option3-4" />D.
+                    Fetching data from an API.</label
+                  >
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution3">
+                Answer: D Explanation: Async/await is commonly used when
+                fetching data from APIs or performing other asynchronous
+                operations.
+              </div>
+            </section>
+            <section id="question4" class="section" style="display: none">
+              <div class="questions">
+                <h2>4. What is the purpose of the Fetch API in JavaScript?</h2>
+                <div class="options">
+                  <label for="option4-1"
+                    ><input type="radio" name="options" id="option4-1" />A. To
+                    create an array from a function.</label
+                  >
+                  <br />
+                  <label for="option4-2"
+                    ><input type="radio" name="options" id="option4-2" />B. To
+                    manipulate the DOM.</label
+                  >
+                  <br />
+                  <label for="option4-3"
+                    ><input type="radio" name="options" id="option4-3" />C. To
+                    send HTTP requests and receive responses.</label
+                  >
+                  <br />
+                  <label for="option4-4"
+                    ><input type="radio" name="options" id="option4-4" />D. To
+                    define JavaScript functions.</label
+                  >
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution4">Answer: C</div>
+            </section>
+            <section id="question5" class="section" style="display: none">
+              <div class="questions">
+                <h2>
+                  5. When using the Fetch API, what method is used to handle a
+                  response and extract JSON data?
+                </h2>
+                <div class="options">
+                  <label for="option5-1"
+                    ><input type="radio" name="options" id="option5-1" />A.
+                    .text()</label
+                  >
+                  <br />
+                  <label for="option5-2"
+                    ><input type="radio" name="options" id="option5-2" />B.
+                    .json()</label
+                  >
+                  <br />
+                  <label for="option5-3"
+                    ><input type="radio" name="options" id="option5-3" />C.
+                    .response()</label
+                  >
+                  <br />
+                  <label for="option5-4"
+                    ><input type="radio" name="options" id="option5-4" />D.
+                    .xml()</label
+                  >
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution5">Answer: B</div>
+            </section>
+            <section id="question6" class="section" style="display: none">
+              <div class="questions">
+                <h2>
+                  6. Which statement is true about error handling in
+                  async/await?
+                </h2>
+                <div class="options">
+                  <label for="option6-1"
+                    ><input type="radio" name="options" id="option6-1" />A.
+                    Errors are automatically handled by async/await.</label
+                  >
+                  <br />
+                  <label for="option6-2"
+                    ><input type="radio" name="options" id="option6-2" />B. Use
+                    .then() and .catch() to handle errors.</label
+                  >
+                  <br />
+                  <label for="option6-3"
+                    ><input type="radio" name="options" id="option6-3" />C.
+                    Errors in async/await cannot be caught.</label
+                  >
+                  <br />
+                  <label for="option6-4"
+                    ><input type="radio" name="options" id="option6-4" />D. Use
+                    try-catch blocks to catch errors.</label
+                  >
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution6">Answer: D</div>
+            </section>
+            <section id="question7" class="section" style="display: none">
+              <div class="questions">
+                <h2>
+                  7. What is the primary benefit of using async/await over
+                  traditional callbacks?
+                </h2>
+                <div class="options">
+                  <label for="option7-1"
+                    ><input type="radio" name="options" id="option7-1" />A.
+                    Simpler and more readable code</label
+                  >
+                  <br />
+                  <label for="option7-2"
+                    ><input type="radio" name="options" id="option7-2" />B.
+                    Easier handling of errors</label
+                  >
+                  <br />
+                  <label for="option7-3"
+                    ><input type="radio" name="options" id="option7-3" />C.
+                    Smaller bundle size</label
+                  >
+                  <br />
+                  <label for="option7-4"
+                    ><input type="radio" name="options" id="option7-4" />D.
+                    Improved performance</label
+                  >
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution7">Answer: A</div>
+            </section>
+            <section id="question8" class="section" style="display: none">
+              <div class="questions">
+                <h2>
+                  8. What does the setInterval() function do in JavaScript?
+                </h2>
+                <div class="options">
+                  <label for="option8-1"
+                    ><input type="radio" name="options" id="option8-1" />A.
+                    Halts the execution of the JavaScript code.</label
+                  >
+                  <br />
+                  <label for="option8-2"
+                    ><input type="radio" name="options" id="option8-2" />B.
+                    Delays the execution of a function for a specified
+                    time.</label
+                  >
+                  <br />
+                  <label for="option8-3"
+                    ><input type="radio" name="options" id="option8-3" />C.
+                    Executes a function repeatedly at a specified time
+                    interval.</label
+                  >
+                  <br />
+                  <label for="option8-4"
+                    ><input type="radio" name="options" id="option8-4" />D. Sets
+                    a timeout for a function to run only once.</label
+                  >
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution8">Answer:C</div>
+            </section>
+            <section id="question9" class="section" style="display: none">
+              <div class="questions">
+                <h2>
+                  9. How do you stop the execution of a function scheduled with
+                  setInterval()?
+                </h2>
+                <div class="options">
+                  <label for="option9-1"
+                    ><input type="radio" name="options" id="option9-1" />A.
+                    Using the return statement in the function.</label
+                  >
+                  <br />
+                  <label for="option9-2"
+                    ><input type="radio" name="options" id="option9-2" />B. By
+                    calling the clearInterval() function with the interval
+                    ID.</label
+                  >
+                  <br />
+                  <label for="option9-3"
+                    ><input type="radio" name="options" id="option9-3" />C. By
+                    setting the interval time to 0.</label
+                  >
+                  <br />
+                  <label for="option9-4"
+                    ><input type="radio" name="options" id="option9-4" />D. By
+                    using the break statement.</label
+                  >
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution9">Answer: B</div>
+            </section>
+            <section id="question10" class="section" style="display: none">
+              <div class="questions">
+                <h2>
+                  10. When using clearInterval(), what is the required argument?
+                </h2>
+                <div class="options">
+                  <label for="option10-1"
+                    ><input type="radio" name="options" id="option10-1" />A. The
+                    function to be cleared.wo</label
+                  >
+                  <br />
+                  <label for="option10-2"
+                    ><input type="radio" name="options" id="option10-2" />B. The
+                    time interval.</label
+                  >
+                  <br />
+                  <label for="option10-3"
+                    ><input type="radio" name="options" id="option10-3" />C. The
+                    DOM element</label
+                  >
+                  <br />
+                  <label for="option10-4"
+                    ><input type="radio" name="options" id="option10-4" />D. The
+                    interval ID returned by setInterval().</label
+                  >
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution10">
+                Answer: D Explanation: clearInterval() requires the interval ID
+                returned by setInterval() as its argument to clear the interval.
+              </div>
+            </section>
+            <section id="question11" class="section" style="display: none">
+              <div class="questions">
+                <h2>
+                  11. What is the primary advantage of using Axios over the
+                  Fetch API?
+                </h2>
+                <div class="options">
+                  <label for="option11-1"
+                    ><input type="radio" name="options" id="option11-1" />A.
+                    Simplicity and ease of use.</label
+                  >
+                  <br />
+                  <label for="option11-2"
+                    ><input type="radio" name="options" id="option11-2" />B.
+                    Wider browser support.</label
+                  >
+                  <br />
+                  <label for="option11-3"
+                    ><input type="radio" name="options" id="option11-3" />C.
+                    Smaller bundle size.</label
+                  >
+                  <br />
+                  <label for="option11-4"
+                    ><input type="radio" name="options" id="option11-4" />D.
+                    Better performance.</label
+                  >
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution11">
+                Answer: A Explanation: Axios is often favored for its simplicity
+                and ease of use compared to the Fetch API.
+              </div>
+            </section>
+            <section id="question12" class="section" style="display: none">
+              <div class="questions">
+                <h2>
+                  12. When would 'results shown' be logged to the console?
+                </h2>
+                <p><img src="./img/soru12.png" alt="" id="soru12img" /></p>
+                <div class="options">
+                  <label for="option12-1"
+                    ><input type="radio" name="options" id="option12-1" />A.
+                    after 10 second</label
+                  >
+                  <br />
+                  <label for="option12-2"
+                    ><input type="radio" name="options" id="option12-2" />B.
+                    immediately</label
+                  >
+                  <br />
+                  <label for="option12-3"
+                    ><input type="radio" name="options" id="option12-3" />C.
+                    after results are received from the HTTP request</label
+                  >
+                  <br />
+                  <label for="option12-4"
+                    ><input type="radio" name="options" id="option12-4" />D.
+                    after 10000 seconds</label
+                  >
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution12">Answer: B</div>
+            </section>
+            <section id="question13" class="section" style="display: none">
+              <div class="questions">
+                <h2>
+                  13. Why might you choose to make your code asynchronous?
+                </h2>
+                <div class="options">
+                  <label for="option13-1"
+                    ><input type="radio" name="options" id="option13-1" />A. to
+                    ensure that tasks further down in your code are not
+                    initiated until earlier tasks have completed</label
+                  >
+                  <br />
+                  <label for="option13-2"
+                    ><input type="radio" name="options" id="option13-2" />B. to
+                    make your code faster</label
+                  >
+                  <br />
+                  <label for="option13-3"
+                    ><input type="radio" name="options" id="option13-3" />C. to
+                    ensure that the call stack maintains a LIFO (Last in, First
+                    Out) structure</label
+                  >
+                  <br />
+                  <label for="option13-4"
+                    ><input type="radio" name="options" id="option13-4" />D. to
+                    start tasks that might take some time without blocking
+                    subsequent tasks from executing immediately</label
+                  >
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution13">Answer: D</div>
+            </section>
+            <section id="question14" class="section" style="display: none">
+              <div class="questions">
+                <h2>
+                  14. What is the HTTP verb to request the contents of an
+                  existing resource?
+                </h2>
+                <div class="options">
+                  <label for="option14-1"
+                    ><input type="radio" name="options" id="option14-1" />A.
+                    DELETE</label
+                  >
+                  <br />
+                  <label for="option14-2"
+                    ><input type="radio" name="options" id="option14-2" />B.
+                    PATCH</label
+                  >
+                  <br />
+                  <label for="option14-3"
+                    ><input type="radio" name="options" id="option14-3" />C.
+                    GET</label
+                  >
+                  <br />
+                  <label for="option14-4"
+                    ><input type="radio" name="options" id="option14-4" />D.
+                    CALL</label
+                  >
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution14">Answer: C</div>
+            </section>
+            <section id="question15" class="section" style="display: none">
+              <div class="questions">
+                <h2>
+                  15. Which method call is chained to handle a successful
+                  response returned by fetch()?
+                </h2>
+                <div class="options">
+                  <label for="option15-1"
+                    ><input type="radio" name="options" id="option15-1" />A.
+                    done()</label
+                  >
+                  <br />
+                  <label for="option15-2"
+                    ><input type="radio" name="options" id="option15-2" />B.
+                    catch()</label
+                  >
+                  <br />
+                  <label for="option15-3"
+                    ><input type="radio" name="options" id="option15-3" />C.
+                    then()</label
+                  >
+                  <br />
+                  <label for="option15-4"
+                    ><input type="radio" name="options" id="option15-4" />D.
+                    finally()</label
+                  >
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution15">Answer: C</div>
+            </section>
+            <section id="question16" class="section" style="display: none">
+              <div class="questions">
+                <h2>
+                  16. Which statement is applicable to the defer attribute of
+                  the HTML &lt;script&gt; tag?
+                </h2>
+                <div class="options">
+                  <label for="option16-1"
+                    ><input type="radio" name="options" id="option16-1" />A.
+                    defer allows the browser to continue processing the page
+                    while the script loads in the background.</label
+                  >
+                  <br />
+                  <label for="option16-2"
+                    ><input type="radio" name="options" id="option16-2" />B.
+                    defer causes the script to be loaded from the backup content
+                    delivery network (CDN).</label
+                  >
+                  <br />
+                  <label for="option16-3"
+                    ><input type="radio" name="options" id="option16-3" />C.
+                    defer blocks the browser from processing HTML below the tag
+                    until the script is completely loaded.</label
+                  >
+                  <br />
+                  <label for="option16-4"
+                    ><input type="radio" name="options" id="option16-4" />D.
+                    defer lazy loads the script, causing it to download only
+                    when it is called by another script on the page.</label
+                  >
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution16">Answer: A</div>
+            </section>
+            <section id="question17" class="section" style="display: none">
+              <div class="questions">
+                <h2>17. What will be logged to the console?</h2>
+                <p><img src="./img/soru17.png" alt="" id="soru17img" /></p>
+                <div class="options">
+                  <label for="option17-1"
+                    ><input type="radio" name="options" id="option17-1" />A.<img
+                      src="./img/17A.png"
+                      alt=""
+                      id="soru17imgA"
+                  /></label>
+                  <label for="option17-2"
+                    ><input type="radio" name="options" id="option17-2" />B.<img
+                      src="./img/17B.png"
+                      alt=""
+                      id="soru17imgB"
+                  /></label>
+                  <label for="option17-3"
+                    ><input type="radio" name="options" id="option17-3" />C.<img
+                      src="./img/17C.png"
+                      alt=""
+                      id="soru17imgC"
+                  /></label>
+                  <label for="option17-4"
+                    ><input type="radio" name="options" id="option17-4" />D.<img
+                      src="./img/17D.png"
+                      alt=""
+                      id="soru17imgD"
+                  /></label>
+                  <br />
+                  <div class="btn-div">
+                    <button type="button" class="btn btn-dark" id="check">
+                      Check
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="solution" id="solution17">Answer: A</div>
+            </section>
+            <section id="question18" class="section" style="display: none">
+              <h3>
+                1. What is ‘callback hell’ in the context of using callbacks,
+                and what are its disadvantages?
+              </h3>
+              <div class="btn-div">
+                <button type="button" class="btn btn-dark" id="check">
+                  Check
+                </button>
+              </div>
+              <div class="solution" id="solution18">
+                Answer : “Callback hell” is used when you have many nested
+                callbacks in our code. Think of it as a layer cake of functions
+                where each layer depends on the one above it. This makes our
+                code look like a pyramid, often called the “Pyramid of Doom.”
+                The downside? It makes our code hard to read and even harder to
+                debug. Plus, each new layer adds complexity, making future
+                changes a headache.
+              </div>
+            </section>
+            <section id="question19" class="section" style="display: none">
+              <h3>2. Can you explain what asynchronous programming is?</h3>
+              <div class="btn-div">
+                <button type="button" class="btn btn-dark" id="check">
+                  Check
+                </button>
+              </div>
+              <div class="solution" id="solution19">
+                Answer : Asynchronous programming is a form of programming that
+                allows for tasks to be completed out of order. This means that a
+                program can start a task and then move on to other tasks before
+                the first one is completed. This can be helpful in situations
+                where a task might take a long time to complete, but the program
+                doesn’t need to wait for it to finish before moving on
+              </div>
+            </section>
+            <section id="question20" class="section" style="display: none">
+              <h3>
+                3. How does async/await help with performance and scalability?
+              </h3>
+              <div class="btn-div">
+                <button type="button" class="btn btn-dark" id="check">
+                  Check
+                </button>
+              </div>
+              <div class="solution" id="solution20">
+                Answer : Async/await can help improve performance and
+                scalability by allowing your application to do other work while
+                it is waiting for a task to complete. This can help avoid
+                bottlenecks and keep your application responsive. Additionally,
+                using async/await can help reduce the overall amount of code
+                needed to be written, making your application easier to
+                maintain.
+              </div>
+            </section>
+            <section id="question21" class="section" style="display: none">
+              <h3>
+                4. What is the purpose of the Promise constructor in JavaScript?
+              </h3>
+              <div class="btn-div">
+                <button type="button" class="btn btn-dark" id="check">
+                  Check
+                </button>
+              </div>
+              <div class="solution" id="solution21">
+                Answer : The Promise constructor is used to create a new Promise
+                object. A Promise object represents an asynchronous operation,
+                and can be used to track the status of that operation. A Promise
+                can be in one of three states: pending, fulfilled, or rejected.
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center mt-4">
+            <button type="button" class="btn btn-dark" id="previous">
+              Previous
+            </button>
+            <button type="button" class="btn btn-dark" id="next">Next</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------------------- -->
+      <!--                  Buttons                  -->
+      <!-- ----------------------------------------- -->
+      <div class="container-fluid buttons">
+        <div class="row">
+          <div class="col-12 text-center">
+            <button
+              onclick="showQuestion(1)"
+              class="btn btn-outline-dark page"
+              id="btn1"
+            >
+              1
+            </button>
+            <button
+              onclick="showQuestion(2)"
+              class="btn btn-outline-dark page"
+              id="btn2"
+            >
+              2
+            </button>
+            <button
+              onclick="showQuestion(3)"
+              class="btn btn-outline-dark page"
+              id="btn3"
+            >
+              3
+            </button>
+            <button
+              onclick="showQuestion(4)"
+              class="btn btn-outline-dark page"
+              id="btn4"
+            >
+              4
+            </button>
+            <button
+              onclick="showQuestion(5)"
+              class="btn btn-outline-dark page"
+              id="btn5"
+            >
+              5
+            </button>
+            <button
+              onclick="showQuestion(6)"
+              class="btn btn-outline-dark page"
+              id="btn6"
+            >
+              6
+            </button>
+            <button
+              onclick="showQuestion(7)"
+              class="btn btn-outline-dark page"
+              id="btn7"
+            >
+              7
+            </button>
+            <button
+              onclick="showQuestion(8)"
+              class="btn btn-outline-dark page"
+              id="btn8"
+            >
+              8
+            </button>
+            <button
+              onclick="showQuestion(9)"
+              class="btn btn-outline-dark page"
+              id="btn9"
+            >
+              9
+            </button>
+            <button
+              onclick="showQuestion(10)"
+              class="btn btn-outline-dark page"
+              id="btn10"
+            >
+              10
+            </button>
+            <button
+              onclick="showQuestion(11)"
+              class="btn btn-outline-dark page"
+              id="btn11"
+            >
+              11
+            </button>
+            <button
+              onclick="showQuestion(12)"
+              class="btn btn-outline-dark page"
+              id="btn12"
+            >
+              12
+            </button>
+            <button
+              onclick="showQuestion(13)"
+              class="btn btn-outline-dark page"
+              id="btn13"
+            >
+              13
+            </button>
+            <button
+              onclick="showQuestion(14)"
+              class="btn btn-outline-dark page"
+              id="btn14"
+            >
+              14
+            </button>
+            <button
+              onclick="showQuestion(15)"
+              class="btn btn-outline-dark page"
+              id="btn15"
+            >
+              15
+            </button>
+            <button
+              onclick="showQuestion(16)"
+              class="btn btn-outline-dark page"
+              id="btn16"
+            >
+              16
+            </button>
+            <button
+              onclick="showQuestion(17)"
+              class="btn btn-outline-dark page"
+              id="btn17"
+            >
+              17
+            </button>
+            <button
+              onclick="showQuestion(18)"
+              class="btn btn-outline-dark page"
+              id="btn18"
+            >
+              18
+            </button>
+            <button
+              onclick="showQuestion(19)"
+              class="btn btn-outline-dark page"
+              id="btn19"
+            >
+              19
+            </button>
+            <button
+              onclick="showQuestion(20)"
+              class="btn btn-outline-dark page"
+              id="btn20"
+            >
+              20
+            </button>
+            <button
+              onclick="showQuestion(21)"
+              class="btn btn-outline-dark page"
+              id="btn21"
+            >
+              21
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid buttons">
+        <div class="row">
+          <div class="col-12 text-center">
+            <button id="btn">Rastgele</button>
+          </div>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="img"><img src="" alt="img" id="img-src" /></div>
+          <div class="isim">isim</div>
+          <!-- <div class="count"></div> -->
+        </div>
+      </div>
+    </footer>
+    <audio src="./audio/mix.mp3" id="spin"></audio>
+    <audio src="./audio/pressBtn.mp3" id="btnSound"></audio>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
