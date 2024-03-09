@@ -106,6 +106,7 @@ videoBtn.addEventListener("click", () => {
     btnArea.style.visibility = "visible";
     nextBtn.style.visibility = "visible";
     previousBtn.style.visibility = "visible";
+    document.querySelector(".skip").style.display = "none";
   }, 57000);
 });
 btnSkip.addEventListener("click", () => {
