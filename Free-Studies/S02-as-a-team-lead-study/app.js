@@ -11,6 +11,7 @@ const videoBtn = document.querySelector("#videoBtn");
 const previousBtn = document.querySelector("#previous");
 const nextBtn = document.querySelector("#next");
 const btnArea = document.querySelector("#btnArea");
+const btnSkip = document.querySelector(".btnSkip");
 
 let arr = [
   "QA124-ALİ MERT",
@@ -106,4 +107,14 @@ videoBtn.addEventListener("click", () => {
     nextBtn.style.visibility = "visible";
     previousBtn.style.visibility = "visible";
   }, 57000);
+});
+btnSkip.addEventListener("click", () => {
+  modalVideo.style.display = "none";
+  document.getElementById("home").style.display = "none";
+  btn.style.visibility = "visible";
+  btnArea.style.visibility = "visible";
+  nextBtn.style.visibility = "visible";
+  previousBtn.style.visibility = "visible";
+  document.getElementById("question1").style.display = "block";
+  document.querySelector(".skip").style.display = "none";
 });

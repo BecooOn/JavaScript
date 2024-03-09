@@ -1,17 +1,17 @@
-// const btn = document.getElementById("btn");
-// const img = document.querySelector(".image");
-// const name = document.querySelector(".name");
-// const email = document.querySelector(".email");
-// const phone = document.querySelector(".phone");
+const btn = document.getElementById("btn");
+const img = document.querySelector(".image");
+const name = document.querySelector(".name");
+const email = document.querySelector(".email");
+const phone = document.querySelector(".phone");
 
-// btn.addEventListener("click", () => {
-//   fetch("https://randomuser.me/api")
-//     .then((res) => res.json())
-//     .then((data) => {
-//       users(data);
-//     })
-//     .catch((err) => showError(err));
-// });
+btn.addEventListener("click", () => {
+  fetch("https://randomuser.me/api")
+    .then((res) => res.json())
+    .then((data) => {
+      users(data);
+    })
+    .catch((err) => showError(err));
+});
 
 const users = (data) => {
   const user = data.results[0];
