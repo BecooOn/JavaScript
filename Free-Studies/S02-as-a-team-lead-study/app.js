@@ -116,5 +116,6 @@ btnSkip.addEventListener("click", () => {
   nextBtn.style.visibility = "visible";
   previousBtn.style.visibility = "visible";
   document.getElementById("question1").style.display = "block";
+  document.getElementById("solution1").style.display = "none";
   document.querySelector(".skip").style.display = "none";
 });
