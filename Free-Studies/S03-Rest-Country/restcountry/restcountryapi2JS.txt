@@ -1,0 +1,30 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const countryList = document.getElementById('country-list');
+  const countryInfo = document.getElementById('country-info');
+
+  // Ülkelerin bilgilerini almak için API'yi çağırma
+  fetch('https://restcountries.com/v3/all')
+    .then(response => response.json())
+    .then(data => {
+      // Her bir ülke için bir liste öğesi oluştur
+      data.forEach(country => {
+        const listItem = document.createElement('li');
+        listItem.textContent = country.name.common;
+        listItem.addEventListener('click', () => displayCountryInfo(country));
+        countryList.appendChild(listItem);
+      });
+    })
+    .catch(error => console.error('Error fetching countries data:', error));
+
+  // Seçilen ülkenin bilgilerini gösterme
+  function displayCountryInfo(country) {
+    countryInfo.innerHTML = `
+      <h2>${country.name.common}</h2>
+      <p>Capital: ${country.capital}</p>
+      <p>Population: ${country.population}</p>
+      <p>Area: ${country.area} square kilometers</p>
+      <p>Region: ${country.region}</p>
+      <img src="${country.flags.png}" alt="${country.name.common} Flag">
+    `;
+  }
+});

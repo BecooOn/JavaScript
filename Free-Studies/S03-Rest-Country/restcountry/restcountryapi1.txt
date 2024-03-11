@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Country Information</title>
+</head>
+<body>
+
+<h1>Country Information</h1>
+
+<div id="countries-list">
+  <!-- Ülkelerin listesi burada görüntülenecek -->
+</div>
+
+<div id="country-info">
+  <!-- Seçilen ülkenin bilgileri burada görüntülenecek -->
+</div>
+
+<script>
+// Ülke bilgilerini almak için fetchCountries() fonksiyonu
+function fetchCountries() {
+  fetch('https://restcountries.com/v3/all')
+    .then(response => response.json())
+    .then(data => {
+      const countriesList = document.getElementById('countries-list');
+
+      data.forEach(country => {
+        const countryName = country.name.common;
+        const countryElement = document.createElement('div');
+        countryElement.textContent = countryName;
+        countryElement.addEventListener('click', () => {
+          displayCountryInfo(country);
+        });
+        countriesList.appendChild(countryElement);
+      });
+    })
+    .catch(error => console.error('Error fetching country data:', error));
+}
+
+// Seçilen ülkenin bilgilerini göstermek için displayCountryInfo() fonksiyonu
+function displayCountryInfo(country) {
+  const countryInfo = document.getElementById('country-info');
+  countryInfo.innerHTML = `
+    <h2>${country.name.common}</h2>
+    <p>Capital: ${country.capital}</p>
+    <p>Population: ${country.population}</p>
+    <p>Region: ${country.region}</p>
+    <p>Subregion: ${country.subregion}</p>
+    <!-- İhtiyacınıza göre diğer bilgileri ekleyebilirsiniz -->
+  `;
+}
+
+// Sayfa yüklendiğinde ülkeleri al
+document.addEventListener('DOMContentLoaded', fetchCountries);
+</script>
+
+</body>
+</html>
