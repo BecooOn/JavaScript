@@ -1,10 +1,10 @@
 # These are my basic JS studies
 ------------------------------------------------------------
 ### Assigments ###
-#1  https://becooon.github.io/JavaScript/Assigments/SS-1-Guess_Game/ <br>
-#2  https://becooon.github.io/JavaScript/Assigments/SS-1/ <br>
-#3  https://becooon.github.io/JavaScript/Assigments/SS-2-Random_BG/ <br>
-#4  https://becooon.github.io/JavaScript/Assigments/SS-3-Random-Cats/ <br>
+#0  https://becooon.github.io/JavaScript/Assigments/SS-0-Guess_Game/ <br>
+#1  https://becooon.github.io/JavaScript/Assigments/SS-1-JavaScript-DOM-Assignment/ <br>
+#2  https://becooon.github.io/JavaScript/Assigments/SS-2-Random_BG/ <br>
+#3  https://becooon.github.io/JavaScript/Assigments/SS-3-Random-Cats/ <br>
 
 ------------------------------------------------------------
 ### Code Challenge ###
@@ -24,8 +24,8 @@
 
 ------------------------------------------------------------
 ### Free-Studies ###
-#1 https://becooon.github.io/JavaScript/Free-Studies/CC-01 <br>
-#2 https://becooon.github.io/JavaScript/Free-Studies/S01-to-do-List <br>
-#3 https://becooon.github.io/JavaScript/Free-Studies/S02-as-a-team-lead-study <br>
-#4 https://becooon.github.io/JavaScript/Free-Studies/S03-Rest-Country <br>
+#0 https://becooon.github.io/JavaScript/Free-Studies/S00-trial-study <br>
+#1 https://becooon.github.io/JavaScript/Free-Studies/S01-to-do-List <br>
+#2 https://becooon.github.io/JavaScript/Free-Studies/S02-as-a-team-lead-study <br>
+#3 https://becooon.github.io/JavaScript/Free-Studies/S03-Rest-Country <br>
 
