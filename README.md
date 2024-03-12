@@ -13,6 +13,7 @@
 #3 https://becooon.github.io/JavaScript/Coding_Challenges/CC-03-Score-Keeper/ <br>
 #4 https://becooon.github.io/JavaScript/Coding_Challenges/CC-04-ID-Validator/ <br>
 #5 https://becooon.github.io/JavaScript/Coding_Challenges/CC-05-Random-User/ <br>
+#6 https://becooon.github.io/JavaScript/Coding_Challenges/CC-06-StopWatch/ <br>
 
 
 ------------------------------------------------------------
