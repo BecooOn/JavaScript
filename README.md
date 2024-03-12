@@ -19,7 +19,7 @@
 ------------------------------------------------------------
 ### Projects ###
 ##1 https://becooon.github.io/JavaScript/Projects/01-Guess-the-Number-Game <br>
-<img src="./Projects/01-Guess-the-Number-Game/audio/guessGame.gif"><br>
+<img src="./Projects/01-Guess-the-Number-Game/audio/guessGame.gif" width="200px"><br>
 ##2 https://becooon.github.io/JavaScript/Projects/02-Wallet-App <br>
 ##3 https://becooon.github.io/JavaScript/Projects/03-Checkout-Page/checkout.html <br>
 
