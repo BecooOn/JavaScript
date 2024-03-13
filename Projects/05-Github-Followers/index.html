@@ -16,6 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <nav class="navbar bg-secondary container-fluid">
@@ -25,45 +26,85 @@
         >
       </div>
     </nav>
-    <header>
-      <h2 class="text-center pt-4">Github Followers</h2>
-    </header>
-    <main class="container">
-      <search class="d-flex mx-auto justify-content-center">
-        <div class="input-group w-50 mb-3">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Github's username"
-            aria-label="Github's username"
-            aria-describedby="button-addon2"
-            required
-            id="searchText"
-            autofocus
-          />
-          <button class="btn btn-warning" type="button" id="button">
-            Get Followers
-          </button>
+    <div class="container text-center pt-4">
+      <div class="row">
+        <div class="col-12 col-md-3 col-lg-2">
+          <ul class="list-group">
+            <li class="list-group-item item">HarveyCla</li>
+            <li class="list-group-item item">omerfaruk2626</li>
+            <li class="list-group-item item">aliwert</li>
+            <li class="list-group-item item">zeyneparslanj</li>
+            <li class="list-group-item item">omer-faruk-oncu</li>
+            <li class="list-group-item item">sedadiriker</li>
+            <li class="list-group-item item">ykslkrtld</li>
+            <li class="list-group-item item">ssimsir</li>
+            <li class="list-group-item item">akyarv0</li>
+            <li class="list-group-item item">kapucuonur</li>
+            <li class="list-group-item item">MaralTach</li>
+            <li class="list-group-item item">ersinn26</li>
+            <li class="list-group-item item">elvisstone</li>
+          </ul>
         </div>
-      </search>
-      <search class="d-flex mx-auto justify-content-center">
-        <div class="input-group w-50 mb-3">
-          <input
-            type="search"
-            class="form-control"
-            placeholder="Search for Github's username"
-            aria-label="Github's username"
-            aria-describedby="button-addon2"
-            id="searchFollowers"
-            autofocus
-          />
+        <div class="col-12 col-md-3 col-lg-2">
+          <ul class="list-group">
+            <li class="list-group-item item1">busrakocarslan</li>
+            <li class="list-group-item item1">ilkerkr</li>
+            <li class="list-group-item item1">ibrsec</li>
+            <li class="list-group-item item1">Auchera</li>
+            <li class="list-group-item item1">CemilZemheri</li>
+            <li class="list-group-item item1">gulsahmy</li>
+            <li class="list-group-item item1">QC101-Zafer</li>
+            <li class="list-group-item item1">f-banipal</li>
+            <li class="list-group-item item1">MeryemSenturk</li>
+            <li class="list-group-item item1">NurNeva</li>
+            <li class="list-group-item item1">muhammedkalafat</li>
+            <li class="list-group-item item1">truthseeker308803</li>
+            <li class="list-group-item item1">peltekss</li>
+            <li class="list-group-item item1">emaozdemir</li>
+          </ul>
         </div>
-      </search>
-      <section
-        class="row row-cols-1 row-cols-md-3 g-4 cards"
-        id="cards"
-      ></section>
-    </main>
+        <div class="col-12 col-md-6 col-lg-8">
+          <header>
+            <h2 class="text-center">Github Followers</h2>
+          </header>
+          <main class="container">
+            <search class="d-flex mx-auto justify-content-center">
+              <div class="input-group w-100 mt-3 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Github's username"
+                  aria-label="Github's username"
+                  aria-describedby="button-addon2"
+                  id="searchText"
+                  autofocus
+                />
+                <button class="btn btn-warning" type="button" id="button">
+                  CLICK
+                </button>
+              </div>
+            </search>
+            <search class="d-flex mx-auto justify-content-center">
+              <div class="input-group w-50 mb-3">
+                <input
+                  type="search"
+                  class="form-control"
+                  placeholder="Search for Github's username"
+                  aria-label="Github's username"
+                  aria-describedby="button-addon2"
+                  id="searchFollowers"
+                  autofocus
+                />
+              </div>
+            </search>
+            <section
+              class="row row-cols-1 row-cols-md-3 g-4 cards"
+              id="cards"
+            ></section>
+          </main>
+        </div>
+      </div>
+    </div>
 
     <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>

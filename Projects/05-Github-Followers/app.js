@@ -4,6 +4,9 @@ const cardsDiv = document.getElementById("cards");
 // console.log(cardsDiv);
 const searchInput = document.getElementById("searchFollowers");
 
+const listGroup = document.querySelectorAll(".list-group");
+const listItems = document.querySelectorAll(".list-group-item");
+
 let followers = []; //! bu değişkeni daha sonra arama alanında kullanmak üzere globalde tanımladık. Bu dizinin içerisini getFollowers() fonksiyonunda fonksiyonuna gelen kullanıcı isimleriyle dolduracağız.
 
 const getFollowers = async (username) => {
@@ -76,7 +79,7 @@ getBtn.addEventListener("click", () => {
   } else {
     iziToast.show({
       //   title: "Başlık",
-      message: "Enter a username!",
+      message: "Enter or choose a username!",
       position: "topCenter", // "bottomRight", "bottomLeft", "topRight", "topLeft", "topCenter", "bottomCenter", "center"
       backgroundColor: "#5DADE2",
       timeout: 3000,
@@ -108,4 +111,19 @@ searchInput.addEventListener("input", (e) => {
 
 window.addEventListener("load", () => {
   searchInput.style.display = "none";
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  listItems.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      let username = e.target.textContent.trim();
+      document.querySelector("#searchText").value = username;
+      getFollowers(username);
+      item.parentNode.removeChild(item);
+      cardsDiv.textContent = "";
+
+    });
+  });
+  // console.log(listItems);
 });
