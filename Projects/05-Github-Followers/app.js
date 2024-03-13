@@ -88,17 +88,11 @@ getBtn.addEventListener("click", () => {
 });
 
 //? event ile anlık verileri yakalayabiliriz; ancak listener olarak "input" özelliğinden dolayı zaten anlık verileri yakalayabiliriz, yani event kullansakta olur kullanmasakta olur..
-// searchInput.addEventListener("input",()=>{
-//     console.log(searchInput); //! anlık değerleri yakalayıp yakalamadığnı görmek için kontrol
+ //! anlık değerleri yakalayıp yakalamadığnı görmek için kontrol
 // })
 searchInput.addEventListener("input", (e) => {
   console.log(e.target.value); //! anlık değerleri yakalayıp yakalamadığnı görmek için kontrol
   cardsDiv.textContent = ""; //? sadece arama sonucu ekranda kalsın diye bu yapılmalıdır
-  //   followers
-  //     .filter((item) =>
-  //       item.login.toLowerCase().includes(e.target.value.toLowerCase())
-  //     )
-  //     .forEach((item) => creatElem(item));
 
   e.target.value
     ? followers
