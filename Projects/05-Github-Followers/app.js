@@ -91,7 +91,7 @@ getBtn.addEventListener("click", () => {
  //! anlık değerleri yakalayıp yakalamadığnı görmek için kontrol
 // })
 searchInput.addEventListener("input", (e) => {
-  console.log(e.target.value); //! anlık değerleri yakalayıp yakalamadığnı görmek için kontrol
+  // console.log(e.target.value); //! anlık değerleri yakalayıp yakalamadığını görmek için kontrol
   cardsDiv.textContent = ""; //? sadece arama sonucu ekranda kalsın diye bu yapılmalıdır
 
   e.target.value
