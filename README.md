@@ -1,4 +1,4 @@
-# These are my basic JS studies
+# These are JavaScript,HTML,CSS,SCSS,Bootstrap studies
 ------------------------------------------------------------
 ### Assigments ###
 ##0  https://becooon.github.io/JavaScript/Assigments/SS-0-Guess_Game/ <br>
