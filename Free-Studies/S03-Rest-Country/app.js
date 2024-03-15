@@ -35,9 +35,9 @@ const countryFunc = (country) => {
   });
 };
 const displayCountryInfo = (selectedCountry) => {
-  flag.setAttribute("src", selectedCountry.flags.png);
+  flag.setAttribute("src", selectedCountry.flags.png || "-");
   nameSpan.textContent = `${selectedCountry.name.common}`;
-  capitalSpan.textContent = `${selectedCountry.capital}`;
+  capitalSpan.textContent = `${selectedCountry.capital || "-"}`;
   populationSpan.textContent = `${selectedCountry.population}`;
   regionSpan.textContent = `${selectedCountry.region}`;
   google.setAttribute("href", selectedCountry.maps.googleMaps);
