@@ -24,9 +24,9 @@
 <img src="./Projects/02-Wallet-App/img/walletapp.gif" width="200px"><br>
 ##3 https://becooon.github.io/JavaScript/Projects/03-Checkout-Page/checkout.html <br>
 <img src="./Projects/03-Checkout-Page/img/checkoutApp.gif" width="200px"><br>
-##4 https://coin-application.netlify.app/ <br>
-##4 https://becooon.github.io/JavaScript/Projects/04-Crypto-Coin-App/dist <br>
-<img src="./Projects/04-Crypto-Coin-App/coin-app/src/coinApp.gif" width="200px"><br>
+<!-- ##4 https://coin-application.netlify.app/ <br> -->
+##4 https://becooon.github.io/JavaScript/Projects/04-Crypto-Coin-App <br>
+<img src="./Projects/04-Crypto-Coin-App/gif/coinApp.gif" width="200px"><br>
 ##5 https://becooon.github.io/JavaScript/Projects/05-Github-Followers <br>
 <img src="./Projects/05-Github-Followers/img/githubFollowers.gif" width="200px"><br>
 
