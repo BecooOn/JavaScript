@@ -31,7 +31,7 @@
 <img src="./Projects/04-Crypto-Coin-App/gif/coinApp.gif" width="200px"><br>
 ##5 https://becooon.github.io/JavaScript/Projects/05-Github-Followers <br>
 <img src="./Projects/05-Github-Followers/img/githubFollowers.gif" width="200px"><br>
-
+##6 https://becooon.github.io/JavaScript/Projects/06-M1-Shopping <br>
 
 
 ------------------------------------------------------------
