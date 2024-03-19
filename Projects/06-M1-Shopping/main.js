@@ -96,7 +96,7 @@ const search = (productCategories) => {
 };
 
 //!------------------DOMContentLoaded için-----------
-document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("load", async () => {
   const products = await cardItems();
   displayButtons();
   displayProducts(products);
