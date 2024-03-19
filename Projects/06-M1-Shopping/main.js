@@ -3,7 +3,7 @@ import { sectionProducts, displayProducts } from "./src/displayProducts";
 import { btnSection, displayButtons, showBtnCat } from "./src/displayButtons";
 import { modalDetail } from "./src/modalDetail";
 import { addToBasket } from "./src/addToBasket";
-import { calculateProducts, cartFieldEvent } from "./src/calculate";
+import { calculateAll, basket } from "./src/calculate";
 
 const searchInput = document.getElementById("searchInput");
 // let productsList = [];
@@ -36,9 +36,11 @@ const cardItems = async () => {
     // console.log("cat", productCategories);
     showBtnCat(productCategories, data);
     search(productCategories);
+    basket(data);
+
     //!------------------butonların işlevlerini ayırmak için-----------
     sectionProducts.addEventListener("click", (e) => {
-      const productId = e.target.id; // Tıklanan see detail butonu id'sini almak için
+      const productId = e.target.id; // Tıklanan butonu id'sini almak için
       if (e.target.classList.contains("btn-primary")) {
         // console.log(e.target, productId);
         const modalBody = document.querySelector(".modal-body");
@@ -48,7 +50,9 @@ const cardItems = async () => {
         // modalDetail(productId); // İlgili ürünün detayını görmek için
       } else if (e.target.classList.contains("btn-danger")) {
         addToBasket(data, productId);
-        calculateProducts();
+        // console.log(e.target);
+        calculateAll();
+        // console.log(e.target.parentNode.parentNode.querySelector(".span-price").textContent.split(" ")[0]);
       }
     });
 
@@ -96,5 +100,4 @@ document.addEventListener("DOMContentLoaded", async () => {
   const products = await cardItems();
   displayButtons();
   displayProducts(products);
-  cartFieldEvent();
 });

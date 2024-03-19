@@ -33,6 +33,7 @@ export const displayProducts = (products) => {
     );
     const span = document.createElement("span");
     const span1 = document.createElement("span");
+    span1.classList.add("span-price");
     span.textContent = "Price:";
     span1.textContent = price + " $";
     const divButtons = document.createElement("div");

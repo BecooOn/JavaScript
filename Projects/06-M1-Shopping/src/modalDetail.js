@@ -1,3 +1,4 @@
+import { addToBasket } from "./addToBasket";
 export const modalDetail = (data, productId) => {
   data.forEach((item) => {
     const { id, title, image, description, price } = item;
@@ -45,6 +46,9 @@ export const modalDetail = (data, productId) => {
       divText.appendChild(divCardBody);
       divCardBody.append(h5, p, divPrice,btnDanger);
       modalBody.appendChild(divText);
+      btnDanger.addEventListener("click", () => {
+        addToBasket(data, id);
+      });
     } else {
       return;
     }
