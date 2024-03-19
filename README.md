@@ -32,7 +32,7 @@
 ##5 https://becooon.github.io/JavaScript/Projects/05-Github-Followers <br>
 <img src="./Projects/05-Github-Followers/img/githubFollowers.gif" width="200px"><br>
 ##6 https://becooon.github.io/JavaScript/Projects/06-M1-Shopping <br>
-<img src="./Projects/06-M1-Shopping/gif/shopping.gif" width="200px"><br>
+<img src="./Projects/06-M1-Shopping/assets/shopping.gif" width="200px"><br>
 
 
 ------------------------------------------------------------
